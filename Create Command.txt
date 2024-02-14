@@ -10,3 +10,13 @@ job varchar(50),
 phone varchar(50),
 depid integer
 );
+
+create table student
+(
+RNO varchar (50) primary key,
+SName varchar(60)not null,
+fees decimal(10,2),
+ Sex varchar(10),
+class varchar(20),
+Age integer
+);
