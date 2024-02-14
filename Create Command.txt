@@ -10,6 +10,10 @@ job varchar(50),
 phone varchar(50),
 depid integer
 );
+insert into employee values('AP123','Mani',650000,
+'Data Analyst','9888777788',315);
+insert into employee (empid,empname,depid)values('AP124','Nani',315);
+
 
 create table student
 (
