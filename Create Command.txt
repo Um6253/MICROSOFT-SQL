@@ -25,6 +25,7 @@ select empname,job,depid from employee;
 
 update employee set empsalary=empsalary+10009;
 update employee set empname='Nani Uppu' where empname='Mani';
+delete from employee where depid=315;
 
 create table student
 (
