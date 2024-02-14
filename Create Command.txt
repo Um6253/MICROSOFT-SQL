@@ -23,6 +23,8 @@ insert into employee values('AP128','Mani',650000,
 select*from employee;
 select empname,job,depid from employee;
 
+update employee set empsalary=empsalary+10009;
+update employee set empname='Nani Uppu' where empname='Mani';
 
 create table student
 (
