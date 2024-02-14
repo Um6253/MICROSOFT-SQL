@@ -13,6 +13,15 @@ depid integer
 insert into employee values('AP123','Mani',650000,
 'Data Analyst','9888777788',315);
 insert into employee (empid,empname,depid)values('AP124','Nani',315);
+insert into employee values('AP125','Mani',650000,
+'Data Analyst','9888777788',319);
+insert into employee values('AP127','Mani',650000,
+'Data Analyst','9888777788',317);
+insert into employee values('AP128','Mani',650000,
+'Data Analyst','9888777788',312);
+
+select*from employee;
+select empname,job,depid from employee;
 
 
 create table student
