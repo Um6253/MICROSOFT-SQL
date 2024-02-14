@@ -1,0 +1,12 @@
+CREATE DATABASE SAMPLE_DB;
+
+USE SAMPLE_DB;
+CREATE TABLE employee
+(
+empid varchar (50) primary key,
+empname varchar(60)not null,
+empsalary decimal(10,2),
+job varchar(50),
+phone varchar(50),
+depid integer
+);
