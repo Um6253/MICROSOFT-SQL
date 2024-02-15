@@ -1,4 +1,4 @@
-select *from employee;
+
 select  empid,empsalary from employee order by depid desc ;
 insert into employee values('AP171','Mani Uppu',300001,'Tester 1',9848885331,411);
 insert into employee values('AP172','Annu Uppu',300033,'Tester 1',9848885331,411);
@@ -47,3 +47,7 @@ select depid ,sum(empsalary)from employee group by depid;
 select depid ,AVG(empsalary)from employee group by depid;
 select depid ,MAX(empsalary)from employee group by depid;
 select depid ,MIN(empsalary)from employee group by depid;
+select depid ,sum(empsalary)from employee group by depid having  sum(empsalary)>1000000;
+select depid ,sum(empsalary)from employee group by depid having  depid =312;
+select depid ,sum(empsalary)from employee  where depid =411 group by depid ;
+select depid ,sum(empsalary)from employee group by depid ;
