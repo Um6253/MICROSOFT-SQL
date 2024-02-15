@@ -15,3 +15,8 @@ select sum(empsalary) from employee  ;
 select avg(empsalary) from employee  ;
 select count(empsalary) from employee  ;
 select max(empsalary) from employee  ;
+select abs(-44);
+select CEILING(88.1);
+select FLOOR(99.9);
+select SIGN(-99),sign(0),sign(99);
+select square(5),sqrt(3),cos(30),exp(2);
