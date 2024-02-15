@@ -5,8 +5,8 @@ insert into employee values('AP172','Annu Uppu',300033,'Tester 1',9848885331,411
 insert into employee values('AP173','Sandhya Uppu',30005,'Tester 2',9848885331,412);
 insert into employee values('AP174','Kittu Uppu',200000,'Tester 3',9848885331,411);
 insert into employee values('AP175','Mom Uppu',100000,'Tester 2',9848885331,412);
-insert into employee values('AP176','Vidhya Uppu',300005,'Tester 3',9848885331,413);
-insert into employee values('AP177','Mohan Uppu',200000,'Tester 4',9848885331,413);
+insert into employee values('AP179','Vidhya Uppu',800005,'Tester 3',9848885331,413);
+insert into employee values('AP178','Mohan Uppu',900000,'Tester 4',9848885331,413);
 select  empid,empsalary from employee where job ='Tester 2' order by depid desc ;
 select  * from employee where job ='Tester 2' order by depid desc ;
 update employee set empsalary=555555 where empname='Nani Uppu';
@@ -51,3 +51,7 @@ select depid ,sum(empsalary)from employee group by depid having  sum(empsalary)>
 select depid ,sum(empsalary)from employee group by depid having  depid =312;
 select depid ,sum(empsalary)from employee  where depid =411 group by depid ;
 select depid ,sum(empsalary)from employee group by depid ;
+
+select * from employee;
+select top(5) * from employee order by empsalary desc;
+select top(2) empname, max(empsalary) from employee where empsalary <> (select max(empsalary) from employee) group by empname order by max(empsalary) desc;
