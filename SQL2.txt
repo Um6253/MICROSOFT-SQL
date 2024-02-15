@@ -27,3 +27,7 @@ select substring('Manikantauppu',10,13);
 select REPLACE('Manikantauppu','uppu','UPPU');
 SELECT Ltrim('          Mani'),RTRIM('m                  ');
 select replicate('Manikantauppu ',5);
+select * from employee where job='Data Analyst' and depid=312;
+select * from employee where job='Data Analyst' or depid=441;
+select * from employee where job!='Data Analyst';
+
