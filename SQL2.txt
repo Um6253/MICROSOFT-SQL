@@ -1,0 +1,2 @@
+select *from employee order by depid desc ;
+select  empid,empsalary from employee order by depid desc ;
