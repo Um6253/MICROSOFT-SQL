@@ -1,2 +1,13 @@
 select *from employee order by depid desc ;
 select  empid,empsalary from employee order by depid desc ;
+insert into employee values('AP131','Mani Uppu',300001,'Tester 1',9848885331,411);
+insert into employee values('AP132','Annu Uppu',300033,'Tester 1',9848885331,412);
+insert into employee values('AP133','Sandhya Uppu',30005,'Tester 2',9848885331,413);
+insert into employee values('AP134','Kittu Uppu',200000,'Tester 3',9848885331,414);
+insert into employee values('AP135','Mom Uppu',100000,'Tester 2',9848885331,415);
+insert into employee values('AP136','Vidhya Uppu',300005,'Tester 3',9848885331,416);
+insert into employee values('AP137','Mohan Uppu',200000,'Tester 4',9848885331,417);
+select  empid,empsalary from employee where job ='Tester 2' order by depid desc ;
+select  * from employee where job ='Tester 2' order by depid desc ;
+update employee set empsalary=555555 where empname='Nani Uppu';
+delete from employee where depid=317;
