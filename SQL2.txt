@@ -55,3 +55,5 @@ select depid ,sum(empsalary)from employee group by depid ;
 select * from employee;
 select top(5) * from employee order by empsalary desc;
 select top(2) empname, max(empsalary) from employee where empsalary <> (select max(empsalary) from employee) group by empname order by max(empsalary) desc;
+select * into emp3 from employee;
+SELECT * FROM emp3;
