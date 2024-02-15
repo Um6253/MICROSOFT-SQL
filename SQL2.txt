@@ -30,4 +30,15 @@ select replicate('Manikantauppu ',5);
 select * from employee where job='Data Analyst' and depid=312;
 select * from employee where job='Data Analyst' or depid=441;
 select * from employee where job!='Data Analyst';
+select getdate();
+select SYSDATETIME();
+select CURRENT_TIMESTAMP as Today;
 
+select datename(MONTH,CURRENT_TIMESTAMP);
+select datename(DAY,CURRENT_TIMESTAMP);
+select datename(YEAR,CURRENT_TIMESTAMP);
+select datename(HOUR,CURRENT_TIMESTAMP);
+select datediff(YEAR,'DECEMBER 31 2001',CURRENT_TIMESTAMP) AS AGE;
+select datediff(MONTH,'DECEMBER 31 2001',CURRENT_TIMESTAMP) AS AGE;
+select datediff(DAY,'DECEMBER 31 2001',CURRENT_TIMESTAMP) AS AGE;
+select dateADD(YEAR,10,CURRENT_TIMESTAMP) AS AGE;
