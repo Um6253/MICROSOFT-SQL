@@ -11,3 +11,7 @@ select  empid,empsalary from employee where job ='Tester 2' order by depid desc 
 select  * from employee where job ='Tester 2' order by depid desc ;
 update employee set empsalary=555555 where empname='Nani Uppu';
 delete from employee where depid=317;
+select sum(empsalary) from employee  ;
+select avg(empsalary) from employee  ;
+select count(empsalary) from employee  ;
+select max(empsalary) from employee  ;
