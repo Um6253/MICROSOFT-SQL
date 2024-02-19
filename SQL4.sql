@@ -45,3 +45,11 @@ emp e full outer join dep d on e.depid=d.depid;
 
 select e.empid,e.empname,e.depid,e.empsalary,f.empid,f.empname,f.empsalary from 
 emp e,emp f where e.empid<>f.empid and e.depid=f.depid order by e.depid;
+select * from emp;
+
+select empname,empsalary from emp where empsalary >
+(select empsalary from emp where empname='nani');
+select empname,empsalary from emp where empsalary >
+(select empsalary from emp where empname='nani')
+and depid =(select depid from emp where empname='mom'); 
+select empname,empsalary from emp where depid=(select depid from dep  where deploc='hyd');
