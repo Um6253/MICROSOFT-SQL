@@ -40,3 +40,6 @@ emp e left outer join dep d on e.depid=d.depid;
 
 select e.empid,e.depid,.empname,e.empsalary,d.depid,d.deploc from 
 emp e right outer join dep d on e.depid=d.depid;
+select e.empid,e.empname,e.empsalary,d.depid,d.deploc from 
+emp e full outer join dep d on e.depid=d.depid;
+
