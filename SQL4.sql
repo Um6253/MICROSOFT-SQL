@@ -53,8 +53,22 @@ select empname,empsalary from emp where empsalary >
 (select empsalary from emp where empname='nani')
 and depid =(select depid from emp where empname='mom'); 
 select empname,empsalary from emp where depid=(select depid from dep  where deploc='hyd');
-Declare @name varchar(30);
+Declare @name varchar(30),@age int;
 select @name='mani';
 select @name;
 select @name='nani';
-select @name;
+select @age=22
+select @name as Name ,@age;
+declare @num int;
+select @num =10;
+select @num;
+select @num +=100;
+select @num;
+select @num *=1000;
+select @num;
+select @num -=1000;
+select @num;
+select * from emp;
+Declare @namee varchar(30),@depid varchar(10);
+select @namee=empname,@depid=depid from emp;
+select @namee,@depid;
