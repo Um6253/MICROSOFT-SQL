@@ -23,6 +23,7 @@ insert into emp values(113,'mom',200000,'d3');
 insert into emp values(114,'dad',250000,'d1');
 insert into emp values(115,'mohan',300000,'d2');
 insert into emp values(116,'vidya',350000,'d3');
+insert into emp values(116,'ammu',350000,'d3');
 select * from emp;
 select * from dep;
 create table dep(depid varchar(10),depname varchar(20),deploc varchar(30));
@@ -30,5 +31,10 @@ insert into dep values('d1','dev','hyd');
 insert into dep values('d2','test','mumbai');
 insert into dep values('d3','data','chennai');
 insert into dep values('d5','data','hyd');
+insert into dep values('d2','data1','hyd');
 
-select e.empid,e.empname,e.empsalary,d.depid,d.deploc from emp e inner join dep d on e.depid=d.depid;
+select e.empid,e.empname,e.empsalary,d.depid,d.deploc from 
+emp e inner join dep d on e.depid=d.depid;
+select e.empid,e.empname,e.empsalary,d.depid,d.deploc from 
+emp e left outer join dep d on e.depid=d.depid;
+
