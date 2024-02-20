@@ -89,3 +89,14 @@ begin
 	end;
 	go
 	execute sample1 @name ='mumbai';
+	go
+alter procedure sample
+as
+begin
+     select * from emp;
+	 select * from dep;
+	end;
+	go
+	execute sample;
+
+
