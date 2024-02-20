@@ -97,6 +97,8 @@ begin
 	 select * from dep;
 	end;
 	go
-	execute sample;
+	
+	exec sp_rename 'sample1','Sample11';
+	execute Sample11 @name ='mumbai';
 
 
