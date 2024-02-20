@@ -20,30 +20,39 @@ begin
 begin
 	declare @sal decimal;
 	select @sal=avg(empsalary) from emp;
-	select @sal;
-	if @sal>25000
-	begin 
-	       print 'My daughter : Ammu' ; 
+	
+	if @sal>2500000000
+	    begin 
+	       print  @sal ; 
 		   end
     else
 	       begin
 		   print 'U r good :' ;
 		   end
-	end
+end
 
 begin
 	
 	while(select min(empsalary) from emp) < 310000
 	begin 
+	declare @salary Decimal;
+	select @salary=min(empsalary) from emp
+
 	       update emp set empsalary=empsalary+1;
     
 	select * from emp;
 	if (select min( empsalary) from emp) >310000
-	       
-		   print'happy';
-		  
-		
-		   
+		   print'happy';	   
 	break
 		   end
 	end
+
+ begin try
+
+      select 1000/0 as 'Division';
+	  end try
+	  begin catch
+	  select ERROR_LINE() as'error line',ERROR_MESSAGE() as 'megs',
+	  ERROR_NUMBER() AS 'ERROR NUM',ERROR_PROCEDURE() AS 'Proced name';
+	  end catch
+
