@@ -30,3 +30,20 @@ begin
 		   print 'U r good :' ;
 		   end
 	end
+
+begin
+	
+	while(select min(empsalary) from emp) < 310000
+	begin 
+	       update emp set empsalary=empsalary+1;
+    
+	select * from emp;
+	if (select min( empsalary) from emp) >310000
+	       
+		   print'happy';
+		  
+		
+		   
+	break
+		   end
+	end
