@@ -75,6 +75,17 @@ create procedure sample
 as
 begin
      select * from emp;
+	 select * from dep;
 	end;
-
 	execute sample;
+go
+
+create procedure sample1(@name varchar(100))
+as
+begin
+     select * from emp e inner join dep d
+	 on e.depid=d.depid
+	 where d.deploc=@name;
+	end;
+	go
+	execute sample1 @name ='mumbai';
