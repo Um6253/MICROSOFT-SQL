@@ -71,3 +71,10 @@ begin
 	  select GETDATE() as 'current date';
 	 end
 go
+create procedure sample
+as
+begin
+     select * from emp;
+	end;
+
+	execute sample;
