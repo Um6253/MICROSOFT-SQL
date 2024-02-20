@@ -56,3 +56,18 @@ begin
 	  ERROR_NUMBER() AS 'ERROR NUM',ERROR_PROCEDURE() AS 'Proced name';
 	  end catch
 
+
+select GETDATE() as 'current date';
+Go
+begin
+     waitfor delay'00:00:20'
+	 select * from emp;
+	 select GETDATE() as 'current date';
+	 end
+go
+begin
+      waitfor time'17:11:10'
+	  select * from emp;
+	  select GETDATE() as 'current date';
+	 end
+go
